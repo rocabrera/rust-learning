@@ -26,8 +26,18 @@ The last line, [dependencies], is the start of a section for you to list any of 
 
 ## **Building and Running a Cargo Project**
 
-To build using cargo:
+To **build** using cargo:
 ```sh
 cargo build
 ```
-This command creates an executable file in *target/debug/<projec_name>*. Running cargo build for the first time also causes Cargo to create a new file at the top level: Cargo.lock. This file keeps track of the exact versions of dependencies in your project. This project doesn’t have dependencies, so the file is a bit sparse. You won’t ever need to change this file manually; Cargo manages its contents for you.
+This command creates an executable file in _target/debug/<projec_name>_. Running cargo build for the first time also causes Cargo to create a new file at the top level: Cargo.lock. This file keeps track of the exact versions of dependencies in your project. This project doesn’t have dependencies, so the file is a bit sparse. You won’t ever need to change this file manually; Cargo manages its contents for you.
+
+To **build** & **run** the program using cargo:
+```sh
+cargo run 
+```
+
+To check for errors (do not compile):
+```sh
+cargo check 
+```
