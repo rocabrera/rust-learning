@@ -1,19 +1,8 @@
-fn mut_vs_shadowing(){
-    let spaces = "   ";
-    let spaces = spaces.len();
-
-    // Cannot change type of mut variable
-    // let mut spaces = "   ";
-    // spaces = spaces.len();
-
-}
-
 fn assign_error() {
     let x = 5;
     println!("The value of x is: {x}");
     // x = 6; // cannot assign twice to immutable variable
 }
-
 
 fn shadowing() {
     let x = 5;
@@ -28,6 +17,16 @@ fn shadowing() {
     println!("The value of x is: {x}");
 }
 
+fn mut_vs_shadowing(){
+    let spaces = "   ";
+    let spaces = spaces.len();
+
+    // Cannot change type of mut variable
+    // let mut spaces = "   ";
+    // spaces = spaces.len();
+
+}
+
 fn main() {
 
 
@@ -40,3 +39,4 @@ fn main() {
     println!("Running mut vs shadowing:");
     mut_vs_shadowing();
 }
+
