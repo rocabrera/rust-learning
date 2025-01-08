@@ -32,7 +32,7 @@ fn main() {
     let left_index: i32 = 0;
     let right_index: i32 = (arr.len() - 1) as i32;
 
-    for &num in numbers.iter() {
+    for num in numbers {
         let _test = iterative_binary_search(&arr, left_index, right_index, num);
         println!("Iterative: {:?}", _test);
         let _test = recursive_binary_search(&arr, left_index, right_index, num);
